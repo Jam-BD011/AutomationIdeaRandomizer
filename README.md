@@ -24,6 +24,7 @@ This project is ongoing, and I have further improvements I would like to make:
 - [ ] Reading car years, body types, engines, transmissions, and functions from text files for easier end-user editing
 - [ ] Exporting generated ideas to a text file
 - [ ] Reduce package download size
+- [ ] Create custom icons
 
 ## License Info
 Project utilizes MIT License. See "LICENSE.txt" for more info.
