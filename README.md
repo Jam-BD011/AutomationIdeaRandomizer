@@ -7,7 +7,7 @@ An idea randomizer for the automotive tycoon game Automation. Generates car buil
 3.) Run "AIRv0.1.exe"
 
 ### (Alternate) Running with Maven
-The project is also possible to run using Apache Maven and JavaFX.
+The project is also possible to run using Apache Maven and JavaSDK.
 Ensure the following is installed:
 
 -JDK 25.0.2\
