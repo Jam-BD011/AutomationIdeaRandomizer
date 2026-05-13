@@ -2,7 +2,9 @@ package com.AtmIdeaRndo.model;
 
 import javafx.application.Application;
 import javafx.application.Platform;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -17,7 +19,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 
-//test
+
 
 /*
  * IMPLEMENT BORDER PANE FOR TOP MENU
@@ -147,10 +149,19 @@ public class IdeaRandoGUI extends Application{
 		sceneStack.getChildren().addAll(sceneBorder);
 		scene = new Scene(sceneStack, 600, 200);
 		
+		//fxml testing
+		Parent testRoot = FXMLLoader.load(getClass().getResource("/test.fxml"));
+		Scene testScene = new Scene(testRoot, 600, 200);
+		
+		appStage.setScene(testScene);
+		appStage.show();
+		
 		//set scene, set title, and then show
+		/**
 		appStage.setScene(scene);
 		appStage.setTitle("Automation Build Randomizer");
 		appStage.show();
+		**/
 		
 	}
 	
