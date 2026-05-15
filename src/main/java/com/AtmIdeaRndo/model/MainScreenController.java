@@ -4,8 +4,7 @@ import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 
-//controller for fxml-related events
-public class MainController {
+public class MainScreenController {
 
 	@FXML 
 	public void exitProgram(ActionEvent event) {

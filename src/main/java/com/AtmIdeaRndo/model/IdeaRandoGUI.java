@@ -149,11 +149,10 @@ public class IdeaRandoGUI extends Application{
 		sceneStack.getChildren().addAll(sceneBorder);
 		scene = new Scene(sceneStack, 600, 200);
 		
-		//fxml testing
-		Parent testRoot = FXMLLoader.load(getClass().getResource("/test.fxml"));
-		Scene testScene = new Scene(testRoot, 600, 200);
-		
-		appStage.setScene(testScene);
+		//more fxml testing
+		Parent newTest = FXMLLoader.load(getClass().getResource("/AirMainScreen.fxml"));
+		Scene newTestScene = new Scene(newTest);
+		appStage.setScene(newTestScene);
 		appStage.show();
 		
 		//set scene, set title, and then show
