@@ -43,7 +43,7 @@
                   </HBox>
                   <HBox fx:id="mainBottomHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
-                        <Button fx:id="generateCar" mnemonicParsing="false" text="Generate Idea" />
+                        <Button fx:id="generateCar" mnemonicParsing="false" text="Generate Idea" onAction="#generateIdea"/>
                         <TextField fx:id="baseCarInfo" alignment="CENTER" prefHeight="25.0" prefWidth="430.0">
                            <HBox.margin>
                               <Insets left="10.0" />
