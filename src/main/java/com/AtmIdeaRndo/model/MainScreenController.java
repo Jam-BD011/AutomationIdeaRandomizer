@@ -30,7 +30,7 @@ public class MainScreenController {
 		baseCarInfo.setText(carBuild);
 		
 		if(engCheckBox.isSelected()) {
-			carEng = IdeaRandomizer.genTrans();
+			carEng = IdeaRandomizer.genEngine();
 			baseCarInfo.appendText(" with a " + carEng);
 		}
 		

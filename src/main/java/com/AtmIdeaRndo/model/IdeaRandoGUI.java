@@ -19,6 +19,7 @@ public class IdeaRandoGUI extends Application{
 		//load screen from fxml
 		Parent newTest = FXMLLoader.load(getClass().getResource("/AIRMainScreen.fxml"));
 		Scene newTestScene = new Scene(newTest);
+		appStage.setTitle("Automation Idea Randomizer");
 		appStage.setScene(newTestScene);
 		appStage.show();
 			
