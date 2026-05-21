@@ -1,5 +1,7 @@
 package com.AtmIdeaRndo.model;
 
+import java.net.URL;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -13,9 +15,9 @@ public class IdeaRandoGUI extends Application{
 	
 	@Override
 	public void start(Stage appStage) throws Exception {
-
-		//more fxml testing
-		Parent newTest = FXMLLoader.load(getClass().getResource("/AirMainScreen.fxml"));
+		
+		//load screen from fxml
+		Parent newTest = FXMLLoader.load(getClass().getResource("/AIRMainScreen.fxml"));
 		Scene newTestScene = new Scene(newTest);
 		appStage.setScene(newTestScene);
 		appStage.show();

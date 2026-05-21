@@ -5,6 +5,5 @@ module AutomationIdeaRandomizer {
     requires javafx.fxml;
 
     exports com.AtmIdeaRndo.model;
-    //opens com.AtmIdeaRndo.model to javafx.graphics;
     opens com.AtmIdeaRndo.model to javafx.fxml;
 }
