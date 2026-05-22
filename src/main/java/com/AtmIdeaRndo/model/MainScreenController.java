@@ -1,5 +1,7 @@
 package com.AtmIdeaRndo.model;
 
+import java.util.Vector;
+
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,6 +15,9 @@ public class MainScreenController {
 	private String carBuild;
 	private String carEng;
 	private String carTrans;
+	
+	//vector for storing generated ideas
+	public Vector<String> generatedCars = new Vector<String>();
 	
 	//button and text field for generating idea
 	@FXML private Button generateCar;
@@ -31,14 +36,19 @@ public class MainScreenController {
 		
 		if(engCheckBox.isSelected()) {
 			carEng = IdeaRandomizer.genEngine();
+			carBuild = carBuild.concat(", " + carEng);			
 			baseCarInfo.appendText(" with a " + carEng);
 		}
 		
 		if(transCheckBox.isSelected()) {
 			carTrans = IdeaRandomizer.genTrans();
+			carBuild = carBuild.concat(", " + carTrans);
 			baseCarInfo.appendText(" and a " + carTrans);
 		}
 		
+		//add ideas to vector
+		generatedCars.add(carBuild);
+	
 	}
 	
 	//topbar exit button handler
