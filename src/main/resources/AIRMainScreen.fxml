@@ -13,15 +13,18 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 
-
 <StackPane fx:id="sceneStack" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.AtmIdeaRndo.model.MainScreenController">
    <children>
       <BorderPane fx:id="sceneBorder" prefHeight="200.0" prefWidth="200.0">
          <top>
-            <ToolBar fx:id="topToolBar" prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <ToolBar fx:id="topToolBar" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <items>
-                  <Button fx:id="exitBtn" mnemonicParsing="false" text="Exit" onAction="#exitProgram"/>
+                  <Button fx:id="exitBtn" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
+                  <Button fx:id="ideasListButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#goToIdea" prefHeight="25.0" prefWidth="107.0" text="All Ideas" textAlignment="CENTER" />
                </items>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
             </ToolBar>
          </top>
          <center>
@@ -43,7 +46,7 @@
                   </HBox>
                   <HBox fx:id="mainBottomHBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
                      <children>
-                        <Button fx:id="generateCar" mnemonicParsing="false" text="Generate Idea" onAction="#generateIdea"/>
+                        <Button fx:id="generateCar" mnemonicParsing="false" onAction="#generateIdea" text="Generate Idea" />
                         <TextField fx:id="baseCarInfo" alignment="CENTER" prefHeight="25.0" prefWidth="430.0">
                            <HBox.margin>
                               <Insets left="10.0" />
