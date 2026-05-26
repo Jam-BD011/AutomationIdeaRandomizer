@@ -124,7 +124,7 @@ public class IdeasScreenController {
 	@FXML
 	public void goHome(ActionEvent event) throws Exception{
 
-		Parent root = FXMLLoader.load(getClass().getResource("/AirMainScreen.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/AIRMainScreen.fxml"));
 		Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 		stage.setScene(new Scene(root));
 		stage.show();
