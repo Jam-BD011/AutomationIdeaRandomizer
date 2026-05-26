@@ -36,7 +36,7 @@
                         <Insets bottom="5.0" top="-10.0" />
                      </VBox.margin>
                   </Label>
-                  <ListView fx:id="ideasList" prefHeight="192.0" prefWidth="500.0">
+                  <ListView fx:id="ideasList" prefHeight="183.0" prefWidth="500.0">
                      <VBox.margin>
                         <Insets left="50.0" right="50.0" />
                      </VBox.margin>
@@ -45,20 +45,30 @@
             </VBox>
          </center>
          <bottom>
-            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <VBox alignment="CENTER" prefHeight="13.0" prefWidth="600.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="removeItem" mnemonicParsing="false" onAction="#removeIdea" text="Remove Selected Item" translateY="-10.0">
-                     <HBox.margin>
-                        <Insets right="10.0" />
-                     </HBox.margin>
-                  </Button>
-                  <Button fx:id="exportBtn" alignment="CENTER" mnemonicParsing="false" onAction="#exportIdeasToTextFile" text="Export to Text File" translateY="-10.0">
-                     <opaqueInsets>
-                        <Insets />
-                     </opaqueInsets>
-                  </Button>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="600.0">
+                     <children>
+                        <Button fx:id="removeItem" mnemonicParsing="false" onAction="#removeIdea" text="Remove Selected Item" translateY="-10.0">
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="exportBtn" alignment="CENTER" mnemonicParsing="false" onAction="#exportIdeasToTextFile" text="Export to Text File" translateY="-10.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                        <Button fx:id="openExportFile" disable="true" mnemonicParsing="false" onAction="#openExportFile" text="Open Export File" translateY="-10.0">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Label fx:id="exportConfirmationLabel" alignment="CENTER" textAlignment="CENTER" />
                </children>
-            </HBox>
+            </VBox>
          </bottom>
       </BorderPane>
    </children>

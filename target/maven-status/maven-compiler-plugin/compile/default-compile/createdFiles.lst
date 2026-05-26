@@ -1,4 +1,5 @@
 com\AtmIdeaRndo\model\MainScreenController.class
 com\AtmIdeaRndo\model\IdeaRandoGUI.class
-com\AtmIdeaRndo\model\IdeaRandomizer.class
 module-info.class
+com\AtmIdeaRndo\model\IdeasScreenController.class
+com\AtmIdeaRndo\model\IdeaRandomizer.class

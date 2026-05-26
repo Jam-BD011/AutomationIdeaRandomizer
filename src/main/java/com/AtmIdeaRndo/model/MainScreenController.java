@@ -34,29 +34,40 @@ public class MainScreenController {
 	@FXML private CheckBox engCheckBox;
 	@FXML private CheckBox transCheckBox;
 	
-	//generate car button handler
+	/**
+	 * generate random car build ideas
+	 * @param event
+	 */
 	@FXML
 	public void generateIdea(ActionEvent event) {
 		
+		//generate a base build
 		carBuild = IdeaRandomizer.genRandomBuild();
 		baseCarInfo.setText(carBuild);
 		
+		//if the user wants a random engine, append to the end of the build
 		if(engCheckBox.isSelected()) {
 			carEng = IdeaRandomizer.genEngine();
 			carBuild = carBuild.concat(", " + carEng);			
 			baseCarInfo.appendText(" with a " + carEng);
 		}
 		
+		//if the user wants a random transmission, append to the end again
 		if(transCheckBox.isSelected()) {
 			carTrans = IdeaRandomizer.genTrans();
 			carBuild = carBuild.concat(", " + carTrans);
 			baseCarInfo.appendText(" and a " + carTrans);
 		}
 		
+		//add the build to the observable list
 		generatedCars.add(carBuild);
 	}
 	
-	//will go to previous ideas screen
+	/**
+	 * go to the currently generated ideas screen
+	 * @param event
+	 * @throws Exception
+	 */
 	@FXML
 	public void goToIdea(ActionEvent event) throws Exception{
 		
@@ -71,7 +82,10 @@ public class MainScreenController {
 		stage.show();
 	}
 	
-	//topbar exit button handler
+	/**
+	 * exit program
+	 * @param event
+	 */
 	@FXML 
 	public void exitProgram(ActionEvent event) {
 		Platform.exit();

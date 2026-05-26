@@ -55,7 +55,7 @@ public class IdeaRandomizer {
 				"6-Spd Adv. Auto", "7-Spd Adv. Auto", "8-Spd Adv. Auto", "9-Spd Adv. Auto", "2-Spd Auto Manual", "3-Spd Auto Manual", "4-Spd Auto Manual",
 				"5-Spd Auto Manual", "6-Spd Auto Manual", "7-Spd Auto Manual", "2-Spd Dual Clutch", "3-Spd Dual Clutch", "4-Spd Dual Clutch",
 				"5-Spd Dual Clutch", "6-Spd Dual Clutch", "7-Spd Dual Clutch", "2-Spd Sequential", "3-Spd Sequential", "4-Spd Sequential", "5-Spd Sequential",
-				"6-Spd Sequential", "7-Spd Sequential", "Continous"};
+				"6-Spd Sequential", "7-Spd Sequential", "Continous (CVT)"};
 		String randTrans = "";
 		
 		randTrans = transmissions[(int)(Math.random() * transmissions.length)];
