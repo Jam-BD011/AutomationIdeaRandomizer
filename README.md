@@ -1,6 +1,13 @@
 # Automation Idea Randomizer
 An idea randomizer for the automotive tycoon game Automation. Generates car build ideas for users to create in-game!
 
+## Table of Contents
+- [Installation and Running](#how-to-install-and-run-windows-desktop)
+- [Once You're Running...](#once-youre-running)
+- [Planned Features](#whats-planned)
+- [Updates](#update-log)
+- [License](#license-info)
+
 ## How to Install and Run (Windows Desktop)
 1.) On the "Releases" page, download AIRv0.2.zip\
 2.) Extract zip contents anywhere\
