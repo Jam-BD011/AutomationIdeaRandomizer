@@ -1,8 +1,0 @@
-Sedan
-Wagon
-Hatchback
-Coupe
-SUV
-Pickup
-MPV
-Van

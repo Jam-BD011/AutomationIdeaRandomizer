@@ -16,7 +16,7 @@ public class ListFunctions {
 	public static void setFunctList() throws FileNotFoundException {
 		
 		try {
-			File file = new File("src/main/resources/functions.txt");
+			File file = new File("Lists/functions.txt");
 			Scanner scnr = new Scanner(file);
 			
 			while(scnr.hasNextLine()) {
@@ -33,7 +33,7 @@ public class ListFunctions {
 	//set or re-set vehicle function lists
 	public static void setBodiesList() throws FileNotFoundException{
 		try {
-			File file = new File("src/main/resources/bodies.txt");
+			File file = new File("Lists/bodies.txt");
 			Scanner scnr = new Scanner(file);
 			
 			while(scnr.hasNextLine()) {
@@ -50,7 +50,7 @@ public class ListFunctions {
 	//set or re-set vehicle function lists
 	public static void setEnginesList() throws FileNotFoundException{
 		try {
-			File file = new File("src/main/resources/engines.txt");
+			File file = new File("Lists/engines.txt");
 			Scanner scnr = new Scanner(file);
 			
 			while(scnr.hasNextLine()) {
@@ -67,7 +67,7 @@ public class ListFunctions {
 	//set or re-set vehicle function lists
 	public static void setTransList() throws FileNotFoundException{
 		try {
-			File file = new File("src/main/resources/transmissions.txt");
+			File file = new File("Lists/transmissions.txt");
 			Scanner scnr = new Scanner(file);
 			
 			while(scnr.hasNextLine()) {

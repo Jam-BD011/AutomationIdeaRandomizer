@@ -3,3 +3,4 @@ com\AtmIdeaRndo\model\IdeaRandoGUI.class
 module-info.class
 com\AtmIdeaRndo\model\IdeasScreenController.class
 com\AtmIdeaRndo\model\IdeaRandomizer.class
+com\AtmIdeaRndo\model\ListFunctions.class
