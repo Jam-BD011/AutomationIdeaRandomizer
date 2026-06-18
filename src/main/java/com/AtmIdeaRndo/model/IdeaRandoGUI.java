@@ -14,6 +14,12 @@ public class IdeaRandoGUI extends Application{
 	@Override
 	public void start(Stage appStage) throws Exception {
 		
+		//get lists from files
+		ListFunctions.setFunctList();
+		ListFunctions.setBodiesList();
+		ListFunctions.setEnginesList();
+		ListFunctions.setTransList();
+		
 		//load screen from fxml
 		Parent root = FXMLLoader.load(getClass().getResource("/AIRMainScreen.fxml"));
 		Scene rootScene = new Scene(root);
