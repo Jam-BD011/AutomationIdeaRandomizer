@@ -3,10 +3,19 @@ package com.AtmIdeaRndo.model;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
+
 import java.util.ArrayList;
 
 public class ListFunctions {
-
+	
+	private static Integer min = null;
+	private static Integer max = null;
+	
 	static ArrayList<String> functionsList = new ArrayList<String>();
 	static ArrayList<String> bodiesList = new ArrayList<String>();
 	static ArrayList<String> enginesList = new ArrayList<String>();
@@ -100,4 +109,5 @@ public class ListFunctions {
 	public static ArrayList<String> getTrans(){
 		return transList;
 	}
+	
 }

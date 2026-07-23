@@ -98,7 +98,6 @@ public class IdeasScreenController {
 	 */
 	@FXML
 	public void openExportFile(ActionEvent event) {
-		System.out.println("beep boop");
 		
 		//try-catch for opening last written file
 		try {
